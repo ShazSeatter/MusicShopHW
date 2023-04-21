@@ -40,6 +40,5 @@ public class SaxophoneTest {
     @Test
     public void hasKeyValues() {
         assertEquals(22, saxophone.getKeyValues());
-
     }
 }
