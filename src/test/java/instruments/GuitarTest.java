@@ -31,7 +31,13 @@ public class GuitarTest {
     }
 
     @Test
-    public void getInstrumentType() {
+    public void hasInstrumentType() {
         assertEquals("String", guitar.getInstrumentType().getName());
+    }
+
+    @Test
+    public void hasNumOfStrings() {
+        assertEquals(6, guitar.getNumOfStrings());
+
     }
 }
