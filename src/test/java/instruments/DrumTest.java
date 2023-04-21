@@ -39,7 +39,7 @@ public class DrumTest {
         assertEquals(200, drum.getPrice());
     }
     @Test
-    public void hasNumOfStrings() {
+    public void hasNumOfDrums() {
         assertEquals(5, drum.getNumOfDrums());
 
     }

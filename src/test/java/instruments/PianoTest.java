@@ -39,7 +39,7 @@ public class PianoTest {
         assertEquals(220, piano.getPrice());
     }
     @Test
-    public void hasNumOfStrings() {
+    public void hasNumOfKeys() {
         assertEquals(88, piano.getNumOfKeys());
 
     }
