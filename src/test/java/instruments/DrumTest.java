@@ -1,47 +1,46 @@
 package instruments;
 
-
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class GuitarTest {
+public class DrumTest {
 
-    Guitar guitar;
+    Drum drum;
 
     @Before
     public void before() {
-        guitar = new Guitar("Yamaha", "brown", 100, InstrumentType.STRING, 140, 6);
+        drum = new Drum("Yamaha", "red", 100, InstrumentType.PERCUSSION, 200, 5);
     }
 
     @Test
     public void hasModelBrand() {
-        assertEquals("Yamaha", guitar.getModelBrand());
+        assertEquals("Yamaha", drum.getModelBrand());
 
     }
     @Test
     public void hasColor() {
-        assertEquals("brown", guitar.getColor());
+        assertEquals("red", drum.getColor());
     }
 
     @Test
     public void hasPriceBought() {
-        assertEquals(100, guitar.getPriceBought());
+        assertEquals(100, drum.getPriceBought());
     }
 
     @Test
     public void hasInstrumentType() {
-        assertEquals("String", guitar.getInstrumentType().getName());
+        assertEquals("Percussion", drum.getInstrumentType().getName());
     }
 
     @Test
     public void hasPrice() {
-        assertEquals(140, guitar.getPrice());
+        assertEquals(200, drum.getPrice());
     }
     @Test
     public void hasNumOfStrings() {
-        assertEquals(6, guitar.getNumOfStrings());
+        assertEquals(5, drum.getNumOfDrums());
 
     }
 }

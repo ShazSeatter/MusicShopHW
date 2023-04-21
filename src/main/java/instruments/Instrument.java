@@ -4,15 +4,18 @@ public abstract class Instrument {
 
     private String modelBrand;
     private String color;
-    private int price;
+    private int priceBought;
 
     private InstrumentType instrumentType;
 
-    public Instrument(String modelBrand, String color, int price, InstrumentType instrumentType) {
+    private int price;
+
+    public Instrument(String modelBrand, String color, int priceBought, InstrumentType instrumentType, int price) {
         this.modelBrand = modelBrand;
         this.color = color;
-        this.price = price;
+        this.priceBought = priceBought;
         this.instrumentType = instrumentType;
+        this.price = price;
     }
 
     public String getModelBrand() {
@@ -23,11 +26,15 @@ public abstract class Instrument {
         return color;
     }
 
-    public int getPrice() {
-        return price;
+    public int getPriceBought() {
+        return priceBought;
     }
 
     public InstrumentType getInstrumentType() {
         return instrumentType;
+    }
+
+    public int getPrice() {
+        return price;
     }
 }
