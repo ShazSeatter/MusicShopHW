@@ -11,12 +11,12 @@ public class PianoTest {
 
     @Before
     public void before() {
-        piano = new Piano("Roland", "black", 200, InstrumentType.KEYBOARD, 220, 88);
+        piano = new Piano("Roland Piano", "black", 200, InstrumentType.KEYBOARD, 220, 88);
     }
 
     @Test
     public void hasModelBrand() {
-        assertEquals("Roland", piano.getModelBrand());
+        assertEquals("Roland Piano", piano.getModelBrand());
 
     }
     @Test
@@ -41,6 +41,10 @@ public class PianoTest {
     @Test
     public void hasNumOfKeys() {
         assertEquals(88, piano.getNumOfKeys());
+    }
 
+    @Test
+    public void hasSound() {
+        assertEquals("Ting Ting", piano.play());
     }
 }

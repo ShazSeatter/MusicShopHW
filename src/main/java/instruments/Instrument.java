@@ -1,8 +1,9 @@
 package instruments;
 
+import behaviours.IPlay;
 import behaviours.ISell;
 
-public abstract class Instrument implements ISell {
+public abstract class Instrument implements IPlay, ISell {
 
     private String modelBrand;
     private String color;

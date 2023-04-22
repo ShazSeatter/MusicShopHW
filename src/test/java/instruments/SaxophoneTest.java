@@ -10,12 +10,12 @@ public class SaxophoneTest {
 
     @Before
     public void before() {
-        saxophone = new Saxophone("Yamaha", "gold", 50, InstrumentType.BRASS, 140, 22);
+        saxophone = new Saxophone("Yamaha Saxophone", "gold", 50, InstrumentType.BRASS, 140, 22);
     }
 
     @Test
     public void hasModelBrand() {
-        assertEquals("Yamaha", saxophone.getModelBrand());
+        assertEquals("Yamaha Saxophone", saxophone.getModelBrand());
 
     }
     @Test
@@ -40,5 +40,10 @@ public class SaxophoneTest {
     @Test
     public void hasKeyValues() {
         assertEquals(22, saxophone.getKeyValues());
+    }
+
+    @Test
+    public void hasSound() {
+        assertEquals("Honkkkk", saxophone.play());
     }
 }

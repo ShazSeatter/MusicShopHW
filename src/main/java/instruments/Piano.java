@@ -11,4 +11,10 @@ private int numOfKeys;
     public int getNumOfKeys() {
         return numOfKeys;
     }
+
+
+    @Override
+    public String play() {
+        return "Ting Ting";
+    }
 }

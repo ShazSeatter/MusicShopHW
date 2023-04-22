@@ -28,4 +28,8 @@ public class DrumStickTest {
         assertEquals(50, drumStick.getSellPrice());
     }
 
+    @Test
+    public void hasMarkUpValue() {
+        assertEquals(66, drumStick.calculateMarkup(drumStick.getBoughtPrice(), drumStick.getSellPrice()));
+    }
 }

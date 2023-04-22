@@ -11,4 +11,9 @@ public class Drum extends Instrument{
     public int getNumOfDrums() {
         return numOfDrums;
     }
+
+    @Override
+    public String play() {
+        return "Boom";
+    }
 }

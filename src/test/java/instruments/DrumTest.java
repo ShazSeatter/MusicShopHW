@@ -11,12 +11,12 @@ public class DrumTest {
 
     @Before
     public void before() {
-        drum = new Drum("Yamaha", "red", 100, InstrumentType.PERCUSSION, 200, 5);
+        drum = new Drum("Yamaha Drum", "red", 100, InstrumentType.PERCUSSION, 200, 5);
     }
 
     @Test
     public void hasModelBrand() {
-        assertEquals("Yamaha", drum.getModelBrand());
+        assertEquals("Yamaha Drum", drum.getModelBrand());
 
     }
     @Test
@@ -41,6 +41,10 @@ public class DrumTest {
     @Test
     public void hasNumOfDrums() {
         assertEquals(5, drum.getNumOfDrums());
+    }
 
+    @Test
+    public void hasSound() {
+        assertEquals("Boom", drum.play());
     }
 }

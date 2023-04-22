@@ -11,4 +11,9 @@ public class Saxophone extends Instrument {
     public int getKeyValues() {
         return keyValues;
     }
+
+    @Override
+    public String play() {
+        return "Honkkkk";
+    }
 }

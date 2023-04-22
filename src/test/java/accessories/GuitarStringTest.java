@@ -27,4 +27,9 @@ public class GuitarStringTest {
     public void hasSoldPrice() {
         assertEquals(100, guitarString.getSellPrice());
     }
+
+    @Test
+    public void hasMarkUpValue() {
+        assertEquals(100, guitarString.calculateMarkup(guitarString.getBoughtPrice(), guitarString.getSellPrice()));
+    }
 }

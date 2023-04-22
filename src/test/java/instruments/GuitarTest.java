@@ -12,12 +12,12 @@ public class GuitarTest {
 
     @Before
     public void before() {
-        guitar = new Guitar("Yamaha", "brown", 100, InstrumentType.STRING, 140, 6);
+        guitar = new Guitar("Yamaha Guitar", "brown", 100, InstrumentType.STRING, 140, 6);
     }
 
     @Test
     public void hasModelBrand() {
-        assertEquals("Yamaha", guitar.getModelBrand());
+        assertEquals("Yamaha Guitar", guitar.getModelBrand());
 
     }
     @Test
@@ -43,5 +43,9 @@ public class GuitarTest {
     public void hasNumOfStrings() {
         assertEquals(6, guitar.getNumOfStrings());
 
+    }
+    @Test
+    public void hasSound() {
+        assertEquals("Twang", guitar.play());
     }
 }

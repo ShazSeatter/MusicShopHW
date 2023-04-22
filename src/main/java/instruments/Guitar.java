@@ -13,5 +13,8 @@ public class Guitar extends Instrument{
         return numOfStrings;
     }
 
-
+    @Override
+    public String play() {
+        return "Twang";
+    }
 }

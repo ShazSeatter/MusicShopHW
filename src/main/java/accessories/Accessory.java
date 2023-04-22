@@ -27,6 +27,6 @@ public abstract class Accessory implements ISell {
 
     @Override
     public int calculateMarkup(int buyingPrice, int sellingPrice) {
-        return 0;
+        return ((sellingPrice - buyingPrice) * 100 / buyingPrice);
     }
 }
