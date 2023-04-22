@@ -26,8 +26,8 @@ public class GuitarTest {
     }
 
     @Test
-    public void hasPriceBought() {
-        assertEquals(100, guitar.getPriceBought());
+    public void hasBuyingPrice() {
+        assertEquals(100, guitar.getBuyingPrice());
     }
 
     @Test
@@ -36,8 +36,8 @@ public class GuitarTest {
     }
 
     @Test
-    public void hasPrice() {
-        assertEquals(140, guitar.getPrice());
+    public void hasSellingPrice() {
+        assertEquals(140, guitar.getSellingPrice());
     }
     @Test
     public void hasNumOfStrings() {

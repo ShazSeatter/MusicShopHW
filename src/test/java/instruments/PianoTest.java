@@ -25,8 +25,8 @@ public class PianoTest {
     }
 
     @Test
-    public void hasPriceBought() {
-        assertEquals(200, piano.getPriceBought());
+    public void hasBuyingPrice() {
+        assertEquals(200, piano.getBuyingPrice());
     }
 
     @Test
@@ -35,8 +35,8 @@ public class PianoTest {
     }
 
     @Test
-    public void hasPrice() {
-        assertEquals(220, piano.getPrice());
+    public void hasSellingPrice() {
+        assertEquals(220, piano.getSellingPrice());
     }
     @Test
     public void hasNumOfKeys() {

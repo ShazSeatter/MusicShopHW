@@ -1,6 +1,8 @@
 package accessories;
 
-public abstract class Accessory {
+import behaviours.ISell;
+
+public abstract class Accessory implements ISell {
     private String description;
     private int boughtPrice;
     private int sellPrice;
@@ -21,5 +23,10 @@ public abstract class Accessory {
 
     public int getSellPrice() {
         return sellPrice;
+    }
+
+    @Override
+    public int calculateMarkup(int buyingPrice, int sellingPrice) {
+        return 0;
     }
 }

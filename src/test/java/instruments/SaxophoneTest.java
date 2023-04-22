@@ -24,8 +24,8 @@ public class SaxophoneTest {
     }
 
     @Test
-    public void hasPriceBought() {
-        assertEquals(50, saxophone.getPriceBought());
+    public void hasBuyingPrice() {
+        assertEquals(50, saxophone.getBuyingPrice());
     }
 
     @Test
@@ -34,8 +34,8 @@ public class SaxophoneTest {
     }
 
     @Test
-    public void hasPrice() {
-        assertEquals(140, saxophone.getPrice());
+    public void hasSellingPrice() {
+        assertEquals(140, saxophone.getSellingPrice());
     }
     @Test
     public void hasKeyValues() {

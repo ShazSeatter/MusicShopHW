@@ -1,21 +1,23 @@
 package instruments;
 
-public abstract class Instrument {
+import behaviours.ISell;
+
+public abstract class Instrument implements ISell {
 
     private String modelBrand;
     private String color;
-    private int priceBought;
+    private int buyingPrice;
 
     private InstrumentType instrumentType;
 
-    private int price;
+    private int sellingPrice;
 
-    public Instrument(String modelBrand, String color, int priceBought, InstrumentType instrumentType, int price) {
+    public Instrument(String modelBrand, String color, int buyingPrice, InstrumentType instrumentType, int sellingPrice) {
         this.modelBrand = modelBrand;
         this.color = color;
-        this.priceBought = priceBought;
+        this.buyingPrice = buyingPrice;
         this.instrumentType = instrumentType;
-        this.price = price;
+        this.sellingPrice = sellingPrice;
     }
 
     public String getModelBrand() {
@@ -26,15 +28,20 @@ public abstract class Instrument {
         return color;
     }
 
-    public int getPriceBought() {
-        return priceBought;
+    public int getBuyingPrice() {
+        return buyingPrice;
     }
 
     public InstrumentType getInstrumentType() {
         return instrumentType;
     }
 
-    public int getPrice() {
-        return price;
+    public int getSellingPrice() {
+        return sellingPrice;
+    }
+
+    @Override
+    public int calculateMarkup(int buyingPrice, int sellingPrice) {
+        return 0;
     }
 }

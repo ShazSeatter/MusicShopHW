@@ -25,8 +25,8 @@ public class DrumTest {
     }
 
     @Test
-    public void hasPriceBought() {
-        assertEquals(100, drum.getPriceBought());
+    public void hasBuyingPrice() {
+        assertEquals(100, drum.getBuyingPrice());
     }
 
     @Test
@@ -35,8 +35,8 @@ public class DrumTest {
     }
 
     @Test
-    public void hasPrice() {
-        assertEquals(200, drum.getPrice());
+    public void hasSellingPrice() {
+        assertEquals(200, drum.getSellingPrice());
     }
     @Test
     public void hasNumOfDrums() {
