@@ -5,27 +5,26 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class DrumStickTest {
-    DrumStick drumStick;
+public class SheetMusicTest {
+    SheetMusic sheetMusic;
 
     @Before
     public void before() {
-        drumStick = new DrumStick("Drum Sticks", 30, 50);
+        sheetMusic = new SheetMusic("Sheet Music", 30, 50);
     }
 
     @Test
     public void hasDrumSticks() {
-        assertEquals("Drum Sticks", drumStick.getDescription());
+        assertEquals("Sheet Music", sheetMusic.getDescription());
     }
 
     @Test
     public void hasBoughtPrice() {
-        assertEquals(30, drumStick.getBoughtPrice());
+        assertEquals(30, sheetMusic.getBoughtPrice());
     }
 
     @Test
     public void hasSoldPrice() {
-        assertEquals(50, drumStick.getSellPrice());
+        assertEquals(50, sheetMusic.getSellPrice());
     }
-
 }
